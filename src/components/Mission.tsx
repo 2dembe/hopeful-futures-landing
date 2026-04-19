@@ -16,7 +16,7 @@ const Mission = () => {
             Founded on a simple belief — every child deserves a future.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            George Charity Organisation was born in 2014 from a single classroom in rural Kenya. Today, we stand alongside thousands of families across the continent, delivering the essentials that allow children not just to survive — but to thrive.
+            George Charity Organisation was born in 2014 from a single classroom in rural Uganda. Today, we stand alongside thousands of families across the country, delivering the essentials that allow children not just to survive — but to thrive.
           </p>
         </div>
 
