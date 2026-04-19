@@ -1,6 +1,9 @@
 import story1 from "@/assets/story-1.jpg";
 import story2 from "@/assets/story-2.jpg";
 import story3 from "@/assets/story-3.jpg";
+import story4 from "@/assets/story-4.jpg";
+import story5 from "@/assets/story-5.jpg";
+import story6 from "@/assets/story-6.jpg";
 
 /**
  * CMS-style content collection.
@@ -34,15 +37,15 @@ export const stories: Story[] = [
     excerpt:
       "Sponsored at age 7, Amina just became the first person in her village to earn a university degree.",
     body: [
-      "When we first met Amina in 2014, she was sharing a single textbook with four classmates in a one-room schoolhouse in rural Tanzania.",
+      "When we first met Amina in 2014, she was sharing a single textbook with four classmates in a one-room schoolhouse in rural northern Uganda.",
       "Through nine years of consistent sponsorship, she received uniforms, books, school fees, and the mentorship that allowed her to dream beyond her village.",
-      "Today, Amina holds a Bachelor's degree in Public Health and has returned home to lead a community clinic — caring for the very neighbors who watched her grow up.",
+      "Today, Amina holds a Bachelor's degree in Public Health from Makerere University and has returned home to lead a community clinic — caring for the very neighbors who watched her grow up.",
     ],
     coverImage: story1,
     coverAlt: "Amina smiling in graduation cap and gown",
     category: "Education",
     childName: "Amina",
-    country: "Tanzania",
+    country: "Uganda",
     publishedAt: "2024-11-12",
     readingTime: 4,
     author: { name: "Sarah Mwangi", role: "Field Coordinator" },
@@ -55,13 +58,13 @@ export const stories: Story[] = [
     body: [
       "Kofi joined our nutrition program in 2019 — underweight, quiet, and missing more school days than he attended.",
       "Within two years, regular meals and access to our after-school sports program transformed his energy and his confidence.",
-      "Last month, Kofi won a full athletic scholarship to a regional secondary school. He told us he wants to coach kids in his village one day.",
+      "Last month, Kofi won a full athletic scholarship to a regional secondary school in Kampala. He told us he wants to coach kids in his village one day.",
     ],
     coverImage: story2,
     coverAlt: "Kofi holding a soccer trophy outside his school",
     category: "Nutrition",
     childName: "Kofi",
-    country: "Ghana",
+    country: "Uganda",
     publishedAt: "2024-09-28",
     readingTime: 3,
     author: { name: "Daniel Osei", role: "Programs Lead" },
