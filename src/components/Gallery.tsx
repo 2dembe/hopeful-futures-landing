@@ -3,6 +3,8 @@ import child2 from "@/assets/child-2.jpg";
 import child4 from "@/assets/child-4.jpg";
 import child5 from "@/assets/child-5.jpg";
 import child6 from "@/assets/child-6.jpg";
+import child7 from "@/assets/child-7.jpg";
+import child8 from "@/assets/child-8.jpg";
 import groupImg from "@/assets/children-group.jpg";
 
 const images = [
@@ -12,6 +14,8 @@ const images = [
   { src: child5, alt: "Ugandan boy holding a soccer ball" },
   { src: child1, alt: "Young Ugandan boy in polo shirt smiling" },
   { src: child2, alt: "Young Ugandan girl holding a book" },
+  { src: child7, alt: "Ugandan girl reading a book at golden hour" },
+  { src: child8, alt: "Ugandan boy laughing in a sunlit classroom" },
 ];
 
 const Gallery = () => {

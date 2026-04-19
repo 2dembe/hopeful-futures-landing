@@ -5,7 +5,9 @@ import ImpactStats from "@/components/ImpactStats";
 import OurWork from "@/components/OurWork";
 import MeetChildren from "@/components/MeetChildren";
 import Gallery from "@/components/Gallery";
+import Testimonial from "@/components/Testimonial";
 import Stories from "@/components/Stories";
+import Partners from "@/components/Partners";
 import DonationTiers from "@/components/DonationTiers";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -20,7 +22,9 @@ const Index = () => {
       <OurWork />
       <MeetChildren />
       <Gallery />
+      <Testimonial />
       <Stories />
+      <Partners />
       <DonationTiers />
       <Footer />
       <WhatsAppButton />
