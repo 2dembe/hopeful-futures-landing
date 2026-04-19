@@ -12,6 +12,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8 text-primary-foreground/90 text-sm font-medium">
           <a href="#mission" className="hover:text-accent transition-smooth">Mission</a>
           <a href="#impact" className="hover:text-accent transition-smooth">Impact</a>
+          <a href="#stories" className="hover:text-accent transition-smooth">Stories</a>
           <a href="#children" className="hover:text-accent transition-smooth">Children</a>
           <a href="#donate" className="hover:text-accent transition-smooth">Donate</a>
         </div>

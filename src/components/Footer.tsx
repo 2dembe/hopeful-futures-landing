@@ -33,7 +33,7 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg font-semibold mb-5 text-cream">Contact</h4>
             <ul className="space-y-3 text-cream/80 text-sm">
-              <li className="flex items-start gap-3"><Mail className="h-4 w-4 mt-1 text-accent" /> hello@georgecharity.org</li>
+              <li className="flex items-start gap-3"><Mail className="h-4 w-4 mt-1 text-accent" /> williamcharityorganization@gmail.com</li>
               <li className="flex items-start gap-3"><Phone className="h-4 w-4 mt-1 text-accent" /> +1 (555) 010-2024</li>
               <li className="flex items-start gap-3"><MapPin className="h-4 w-4 mt-1 text-accent" /> Nairobi, Kenya</li>
             </ul>
