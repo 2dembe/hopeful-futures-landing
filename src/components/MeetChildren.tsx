@@ -1,5 +1,7 @@
 import sponsor1 from "@/assets/sponsor-child-1.jpg";
 import sponsor2 from "@/assets/sponsor-child-2.jpg";
+import sponsor3 from "@/assets/sponsor-child-3.jpg";
+import sponsor4 from "@/assets/sponsor-child-4.jpg";
 import { Button } from "@/components/ui/button";
 
 const children = [
@@ -16,6 +18,20 @@ const children = [
     country: "Uganda",
     dream: "loves reading and dreams of becoming a teacher",
     img: sponsor2,
+  },
+  {
+    name: "Daniel",
+    age: 7,
+    country: "Uganda",
+    dream: "loves football and hopes to become an engineer who builds bridges",
+    img: sponsor3,
+  },
+  {
+    name: "Grace",
+    age: 10,
+    country: "Uganda",
+    dream: "tops her class in math and dreams of becoming a nurse",
+    img: sponsor4,
   },
 ];
 
@@ -34,7 +50,7 @@ const MeetChildren = () => {
         <ul
           role="list"
           aria-label="Children currently waiting for a sponsor"
-          className="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto"
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto"
         >
           {children.map((child) => (
             <li key={child.name} className="list-none">
