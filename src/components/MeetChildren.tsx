@@ -1,12 +1,22 @@
-import child1 from "@/assets/child-1.jpg";
-import child2 from "@/assets/child-2.jpg";
-import child3 from "@/assets/child-3.jpg";
+import sponsor1 from "@/assets/sponsor-child-1.jpg";
+import sponsor2 from "@/assets/sponsor-child-2.jpg";
 import { Button } from "@/components/ui/button";
 
 const children = [
-  { name: "Amani", age: 8, country: "Kenya", dream: "wants to become a doctor", img: child1 },
-  { name: "Zara", age: 9, country: "Uganda", dream: "loves reading and writing stories", img: child2 },
-  { name: "Kwame", age: 7, country: "Ghana", dream: "dreams of being a teacher", img: child3 },
+  {
+    name: "Brian",
+    age: 8,
+    country: "Uganda",
+    dream: "wants to become a doctor and care for his village",
+    img: sponsor1,
+  },
+  {
+    name: "Aisha",
+    age: 9,
+    country: "Uganda",
+    dream: "loves reading and dreams of becoming a teacher",
+    img: sponsor2,
+  },
 ];
 
 const MeetChildren = () => {
@@ -21,33 +31,60 @@ const MeetChildren = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <ul
+          role="list"
+          aria-label="Children currently waiting for a sponsor"
+          className="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto"
+        >
           {children.map((child) => (
+            <li key={child.name} className="list-none">
             <article
-              key={child.name}
-              className="group bg-card rounded-3xl overflow-hidden shadow-card hover:shadow-warm transition-smooth border border-border"
+              aria-labelledby={`child-${child.name}-name`}
+              className="group bg-card rounded-3xl overflow-hidden shadow-card hover:shadow-warm transition-smooth border border-border focus-within:ring-4 focus-within:ring-accent/40 focus-within:ring-offset-2 focus-within:ring-offset-background"
             >
               <div className="aspect-[4/5] overflow-hidden bg-muted">
                 <img
                   src={child.img}
-                  alt={`${child.name}, age ${child.age}, from ${child.country}`}
+                  alt={`Portrait of ${child.name}, a ${child.age}-year-old child from ${child.country} who ${child.dream}.`}
                   loading="lazy"
-                  width={768}
-                  height={960}
+                  width={1024}
+                  height={1024}
                   className="w-full h-full object-cover group-hover:scale-105 transition-smooth duration-700"
                 />
               </div>
               <div className="p-7">
                 <div className="flex items-baseline justify-between mb-2">
-                  <h3 className="text-2xl font-bold text-foreground">{child.name}</h3>
-                  <span className="text-sm text-muted-foreground">Age {child.age} · {child.country}</span>
+                  <h3 id={`child-${child.name}-name`} className="text-2xl font-bold text-foreground">{child.name}</h3>
+                  <span className="text-sm text-muted-foreground">
+                    <span className="sr-only">Age </span>{child.age} ·&nbsp;{child.country}
+                  </span>
                 </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{child.name} {child.dream}.</p>
-                <Button variant="default" className="w-full">Sponsor {child.name}</Button>
+                <Button
+                  asChild
+                  variant="default"
+                  className="w-full focus-visible:ring-4 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-card"
+                >
+                  <a href="#donate" aria-label={`Sponsor ${child.name}, a ${child.age}-year-old from ${child.country}`}>
+                    Sponsor {child.name}
+                  </a>
+                </Button>
               </div>
             </article>
+            </li>
           ))}
-        </div>
+        </ul>
+
+        <p className="text-center text-muted-foreground mt-12 max-w-xl mx-auto">
+          Many more children are waiting for a sponsor.{" "}
+          <a
+            href="#donate"
+            className="text-accent font-semibold underline underline-offset-4 rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            Contact us to meet them
+          </a>
+          .
+        </p>
       </div>
     </section>
   );
