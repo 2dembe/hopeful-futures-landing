@@ -29,6 +29,7 @@ const Index = () => {
       <DonationTiers />
       <Footer />
       <WhatsAppButton />
+      <PhoneCallButton />
     </main>
   );
 };
