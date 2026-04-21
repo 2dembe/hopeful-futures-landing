@@ -6,11 +6,15 @@ import child6 from "@/assets/child-6.jpg";
 import child7 from "@/assets/child-7.jpg";
 import child8 from "@/assets/child-8.jpg";
 import groupImg from "@/assets/children-group.jpg";
+import smile1 from "@/assets/child-smile-1.jpg";
+import smile2 from "@/assets/child-smile-2.jpg";
 
 const images = [
   { src: groupImg, alt: "Group of joyful Ugandan children" },
+  { src: smile2, alt: "Close-up of a Ugandan boy beaming with a bright smile" },
   { src: child4, alt: "Smiling Ugandan boy in school uniform" },
   { src: child6, alt: "Young Ugandan girl with braided hair smiling" },
+  { src: smile1, alt: "Group of Ugandan school children laughing together in class" },
   { src: child5, alt: "Ugandan boy holding a soccer ball" },
   { src: child1, alt: "Young Ugandan boy in polo shirt smiling" },
   { src: child2, alt: "Young Ugandan girl holding a book" },
