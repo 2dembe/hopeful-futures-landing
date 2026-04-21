@@ -24,35 +24,49 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section className="py-24 md:py-32 bg-background">
+    <section aria-labelledby="gallery-heading" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-4">
             Faces of Hope
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          <h2 id="gallery-heading" className="text-4xl md:text-5xl font-bold text-foreground">
             The smiles your generosity makes possible.
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 max-w-6xl mx-auto">
+        <ul
+          role="list"
+          aria-label="Photo gallery of children supported by George Charity Organisation"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 max-w-6xl mx-auto"
+        >
           {images.map((img, i) => (
-            <div
+            <li
               key={i}
-              className={`relative overflow-hidden rounded-2xl shadow-card group ${
-                i === 0 ? "col-span-2 row-span-2 lg:col-span-3 lg:row-span-2 aspect-square lg:aspect-auto" : "aspect-square"
+              className={`list-none ${
+                i === 0 ? "col-span-2 row-span-2 lg:col-span-3 lg:row-span-2" : ""
               }`}
             >
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading="lazy"
-                className="w-full h-full object-cover group-hover:scale-110 transition-smooth duration-700"
-              />
-              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-smooth" />
-            </div>
+              <figure
+                tabIndex={0}
+                aria-label={img.alt}
+                className={`relative overflow-hidden rounded-2xl shadow-card group cursor-pointer focus:outline-none focus-visible:ring-4 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background h-full ${
+                  i === 0 ? "aspect-square lg:aspect-auto" : "aspect-square"
+                }`}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  width={1024}
+                  height={1024}
+                  className="w-full h-full object-cover group-hover:scale-110 group-focus:scale-110 transition-smooth duration-700"
+                />
+                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 group-focus:bg-primary/20 transition-smooth" aria-hidden="true" />
+              </figure>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
