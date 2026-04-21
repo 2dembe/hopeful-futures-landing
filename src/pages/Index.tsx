@@ -11,6 +11,7 @@ import Partners from "@/components/Partners";
 import DonationTiers from "@/components/DonationTiers";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import PhoneCallButton from "@/components/PhoneCallButton";
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
       <DonationTiers />
       <Footer />
       <WhatsAppButton />
+      <PhoneCallButton />
     </main>
   );
 };
